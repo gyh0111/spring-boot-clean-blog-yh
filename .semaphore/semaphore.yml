@@ -5,11 +5,9 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: Gradle
+  - name: 'Block #1'
+    dependencies: []
     task:
       jobs:
-        - name: Build
-          commands:
-            - sem-version java 1.8
-            - checkout
-            - ./gradlew build
+        - name: 'Job #1'
+          commands: []
